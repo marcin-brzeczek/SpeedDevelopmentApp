@@ -5,12 +5,9 @@
 </div>
 
 # Android Jetpack Compose template
-To create you own repo, click on:
-
-[![Use this template](https://user-images.githubusercontent.com/38083522/226207439-1195c8c4-e3e2-4db0-8f39-7277b08872be.png)](https://github.com/seve-andre/compose-template/generate)
-
-> [!IMPORTANT]
-> [Here](https://github.com/seve-andre/android-jetpack-compose-template/wiki#instructions) you can find detailed instructions on how to turn the template into your own app
+- Composable destinations from Ramcosta to reduce boilerplate code related to writing navigation routes.
+- Deepling mechanism for launching each composable page regardless of navigation
+  - for using deeplinks run the command line adb shell 'am start -d "sliide://generated/orbit_m_v_i_page"'
 
 ## What does it use?
 - [Kotlin](https://kotlinlang.org/) as main language
@@ -29,31 +26,3 @@ To create you own repo, click on:
 - [Splashscreen API](https://developer.android.com/develop/ui/views/launch/splash-screen) to display a splashscreen at app launch
 - [Per-app language preferences](https://developer.android.com/guide/topics/resources/app-languages) to use a language inside the app that is different from the system language
 - [Compose Destinations](https://composedestinations.rafaelcosta.xyz/) for easier app navigation
-
-## What does it offer?
-- :black_circle: dark theme support
-- :uk: :it: in-app language preference
-
-## Screenshots
-<details>
-  <summary><strong>Light/dark theme</strong></summary>
-  <img src="./screenshots/home-light.png" alt="Light theme home screen screenshot" title="Home light" height="500" />
-  <img src="./screenshots/home-dark.png" alt="Dark theme home screen screenshot" title="Home dark" height="500" />
-</details>
-
-<details>
-  <summary><strong>Language and theme pickers</strong></summary>
-  <img src="./screenshots/language-picker.png" alt="Language picker screenshot" title="Language picker" height="500" />
-  <img src="./screenshots/theme-picker.png" alt="Theme picker screenshot" title="Theme picker" height="500" />
-</details>
-
-### Inspo
-- [version catalog](https://github.com/seve-andre/android-jetpack-compose-template/blob/main/gradle/libs.versions.toml): [see inspo](https://developer.android.com/build/migrate-to-catalogs)
-- [SnackbarController](https://github.com/seve-andre/compose-template/blob/main/app/src/main/kotlin/com/mitch/appname/util/SnackbarController.kt): [see inspo](https://github.com/mitchtabian/MVVMRecipeApp/blob/managing-snackbar-with-scaffold/app/src/main/java/com/codingwithmitch/mvvmrecipeapp/presentation/components/util/SnackbarController.kt)
-- [Result](https://github.com/seve-andre/compose-template/blob/main/app/src/main/kotlin/com/mitch/appname/util/Result.kt): [see inspo](https://github.com/android/nowinandroid/blob/607c24e7f7399942e278af663ea4ad350e5bbc3a/core/common/src/main/java/com/google/samples/apps/nowinandroid/core/result/Result.kt)
-- [AppState](https://github.com/seve-andre/compose-template/blob/main/app/src/main/kotlin/com/mitch/appname/ui/util/AppState.kt): [see inspo](https://github.com/android/nowinandroid/blob/607c24e7f7399942e278af663ea4ad350e5bbc3a/app/src/main/java/com/google/samples/apps/nowinandroid/ui/NiaAppState.kt)
-- [NetworkMonitor](https://github.com/seve-andre/compose-template/blob/main/app/src/main/kotlin/com/mitch/appname/util/network/NetworkMonitor.kt): [see inspo](https://github.com/android/nowinandroid/blob/9371d0d4b80ffea0105a2376d057243eb68af0fa/core/data/src/main/java/com/google/samples/apps/nowinandroid/core/data/util/NetworkMonitor.kt)
-- [ConnectivityManagerNetworkMonitor](https://github.com/seve-andre/compose-template/blob/main/app/src/main/kotlin/com/mitch/appname/util/network/ConnectivityManagerNetworkMonitor.kt): [see inspo](https://github.com/android/nowinandroid/blob/11fbf53f12898b6ee7c55dda69716fa3600e7317/core/data/src/main/java/com/google/samples/apps/nowinandroid/core/data/util/ConnectivityManagerNetworkMonitor.kt)
-
-> [!NOTE]
-> Feel free to contribute or reach out to me at [my email](mailto:andrea.severi.dev@gmail.com?subject=[GitHub]%20Android%20Jetpack%20Compose%20Template)
